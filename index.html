@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fibonacci</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="fibonacci.js">
+    </head>
+    <body>
+        <script>
+        let cantidadDeVeces;
+while (isNaN(cantidadDeVeces) || cantidadDeVeces <= 0) {
+  cantidadDeVeces = parseInt(prompt("Ingresa la cantidad de veces que quieres que se haga la secuencia:"));
+}
+
+let a = 0, b = 1;
+for (let i = 1; i <= cantidadDeVeces; i++) {
+  console.log(`Secuencia de Fibonacci #${i}:\n${a}`);
+  [a, b] = [b, a + b];
+}
+
+
+        </script>
+    </body>
+</html>
